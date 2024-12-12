@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Wanderlust Adventures Survey</h1>
+  <p id="description">Thank you for helping us make dream travels even better!</p>
+  
+  <form id="survey-form">
+    
+    <label for="name" id="name-label">Name:</label>
+    <input id="name" type="text" required placeholder="Enter your name">
+    
+    <label for="email" id="email-label">Email:</label>
+    <input id="email" type="email" required placeholder="Enter your email">
+   
+    <label for="number" id="number-label"> Age: </label>
+    <input id="number" required min="3" max="120"  type="number">
+
+    <label for="dropdowm">Would you recommend Wanderlust Adventures to a friend?</label>
+    <select id="dropdown" name="recommend">
+      <option value="definitely">Definitely</option>
+      <option value="maybe">Maybe</option>
+      <option value="not-sure">Not Sure</option>
+    </select>
+
+    <p>What is your dream travel destination?</p>
+    <label><input id="radio" type="radio" name="destination" value="paris"> Paris </label>
+    <label><input id="radio" type="radio" name="destination" value="bali"> Bali </label>
+    <label><input id="radio" type="radio" name="destination" value="new-zealand"> New Zealand </label>
+    <label><input id="radio" type="radio" name="destination" value="iceland"> Iceland </label>
+    <label><input id="radio" type="radio" name="destination" value="tokyo"> Tokyo </label>
+
+    
+    <p>What would you like us to improve? (check all that apply)</p>
+    <label><input type="checkbox" name="improve" value="easy-booking"> Easy Booking </label>
+     <label><input type="checkbox" name="improve"  value="custom-packages"> Custom Travel Packages  </label>
+     <label><input type="checkbox" name="improve"  value="local-guides"> Local Guides  </label>
+     <label><input type="checkbox" name="improve"  value="support"> 24/7 Customer Support </label>
+   <label><input type="checkbox" name="improve"  value="more-travel-destination"> More Travel Destinations</label>
+
+
+   <p>Any comments or suggestions?</p>
+    <textarea id="comments" name="comments" placeholder="Share your thoughts here...">
+    </textarea>
+
+    <button id="submit" type="submit">Submit</button>
+
+
+  </form>
+
+</body>
+</html>
